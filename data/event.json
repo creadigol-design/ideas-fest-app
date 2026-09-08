@@ -1,0 +1,46 @@
+{
+  "name": "Ideas Fest 2026",
+  "tagline": "The festival for business leaders and entrepreneurs",
+  "days": ["2026-09-09", "2026-09-10"],
+  "timezone": "Europe/London",
+  "venue": {
+    "name": "Champneys Tring",
+    "address": "Champneys Tring, Wigginton, Tring, Hertfordshire",
+    "postcode": "HP23 6HY",
+    "mapsUrl": "https://maps.google.com/?q=Champneys+Tring+HP23+6HY"
+  },
+  "hours": {
+    "gatesOpen": "08:00",
+    "programme": "09:15–19:00 (main programme 9am–6pm)",
+    "afterDark": "Evening programme runs until late on Wednesday 9 September; site closes 23:00 on Thursday 10 September"
+  },
+  "travel": {
+    "road": "Just off the A41, around 40 minutes from central London. Onsite parking is bookable in advance; off-site parking via Saba Park Services in Tring.",
+    "rail": "Nearest station is Tring (Avanti West Coast / London Northwestern), about 35 minutes from London Euston. A shuttle runs between Tring station and the venue.",
+    "fromDocShed": "From DocShed, Gwynedd allow roughly 4 hours by road (A55 → M56 → M6 → M1/A41). Aim to leave by 04:30 on Wednesday to make gates at 08:00, or travel Tuesday evening."
+  },
+  "stages": [
+    "The Main Stage",
+    "Founders Forum",
+    "The Workshop",
+    "Scale-Up Zone",
+    "Next Gen Stage",
+    "Purpose Pavilion",
+    "Engine Room, Growth Village"
+  ],
+  "headliners": ["Simon Squibb", "Daniel Priestley", "Ruby Wax"],
+  "links": {
+    "site": "https://ideasfest.uk",
+    "agenda": "https://ideasfest.uk/agenda-2026",
+    "speakers": "https://ideasfest.uk/speakers",
+    "stages": "https://ideasfest.uk/stages-zones/",
+    "info": "https://ideasfest.uk/everything-you-need-to-know",
+    "parking": "https://ideasfest.uk/parking-ideas-fest/",
+    "tickets": "https://ideasfest.uk/2026-tickets/"
+  },
+  "notes": [
+    "All stages and most zones are covered, but this is a festival site: bring layers and boots for the fields.",
+    "Tickets are non-refundable but transferable.",
+    "Sessions are released and moved right up to the day. Re-check the official agenda each morning and re-import if anything shifts."
+  ]
+}

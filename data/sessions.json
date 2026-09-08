@@ -1,0 +1,54 @@
+{
+  "updated": "2026-09-08T18:00:00Z",
+  "source": "Seeded from public announcements. The full agenda at ideasfest.uk/agenda-2026 could not be fetched from the build environment. Use Alerts → Agenda data to import the rest, or replace this file.",
+  "sessions": [
+    {
+      "id": "simon-nicholls-sustainability-strategy",
+      "title": "Sustainability Is a Strategy, Not a Sticker",
+      "speakers": ["Simon Nicholls (Founder & CEO, Olympus Power)"],
+      "day": "2026-09-09",
+      "start": "15:00",
+      "end": "15:45",
+      "stage": "Engine Room, Growth Village",
+      "description": "How businesses can make sustainability a genuine part of commercial strategy: where to start, how to build trust, and how sustainability can support long-term business performance.",
+      "tags": ["sustainability", "strategy"],
+      "url": "https://ideasfest.uk/agenda-2026"
+    },
+    {
+      "id": "headliner-simon-squibb",
+      "title": "Simon Squibb (Main Stage headliner)",
+      "speakers": ["Simon Squibb"],
+      "day": "2026-09-09",
+      "start": null,
+      "end": null,
+      "stage": "The Main Stage",
+      "description": "Founder of HelpBnk and one of the UK's biggest business creators. Announced as a 2026 headliner; time and day to be confirmed from the official agenda.",
+      "tags": ["creator", "content", "brand", "storytelling", "headliner"],
+      "url": "https://ideasfest.uk/speakers"
+    },
+    {
+      "id": "headliner-daniel-priestley",
+      "title": "Daniel Priestley (Main Stage headliner)",
+      "speakers": ["Daniel Priestley"],
+      "day": "2026-09-09",
+      "start": null,
+      "end": null,
+      "stage": "The Main Stage",
+      "description": "Author of Oversubscribed and Key Person of Influence. Announced as a 2026 headliner; time and day to be confirmed from the official agenda.",
+      "tags": ["marketing", "positioning", "demand", "brand", "headliner"],
+      "url": "https://ideasfest.uk/speakers"
+    },
+    {
+      "id": "headliner-ruby-wax",
+      "title": "Ruby Wax (Main Stage headliner)",
+      "speakers": ["Ruby Wax"],
+      "day": "2026-09-10",
+      "start": null,
+      "end": null,
+      "stage": "The Main Stage",
+      "description": "Comedian, writer and mental health campaigner. Announced as a 2026 headliner; time and day to be confirmed from the official agenda.",
+      "tags": ["wellbeing", "leadership", "headliner"],
+      "url": "https://ideasfest.uk/speakers"
+    }
+  ]
+}
