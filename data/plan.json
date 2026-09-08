@@ -1,0 +1,276 @@
+{
+ "description": "favourites = the 28 sessions saved on ideasfest.uk (IDs from the ?plan= link). added = sessions vedrí curation put in on top. curation = per-session verdict. The Plan tab's Route view shows core + booked commitments, plus good sessions that don't clash with them.",
+ "planUrl": "https://ideasfest.uk/agenda-2026?plan=da669c1d-0231-4782-88a3-84d01c86e881%2C377c0e4d-1a53-4465-b74f-a8a23d6cd046%2Cce30f8bf-f8d2-4e78-aae8-f50856682b7f%2C8a4f052a-0149-4f51-baa9-090aaebaeda1%2C94732b16-9ba5-4cd2-a93f-adb08c82c281%2C560f6a1d-f651-4a18-ad24-1309634e0a62%2C1ed256a6-1baf-4757-b862-4a1c2b65222d%2C9a9c09e6-5586-42a8-b50a-58468db0c438%2Cea832af8-f776-444c-add1-a858af4e9d82%2Cad7b57c8-d223-4a56-8097-72f260832b44%2C2bf30495-de98-414b-974d-b2f03caf45df%2Cfbca0698-d75b-4385-bc36-d1fed997d4e8%2C1f7591a6-ec8c-4438-8160-40688d9ab9cb%2C6825edb7-c19b-445f-ab54-8bf77bdabcb6%2Cd4e1fab1-06f7-44bf-ad45-79fa6b8e8a64%2C7d69a7cc-dcbc-42e2-8f24-7a21c6c20122%2Cd6c6f1b0-06f5-4d3e-94f2-315b3bdbb4fb%2Cd732386f-0769-4f82-af34-ea0704506090%2C1c1423bd-4af2-4d4f-9201-85ed9505869f%2C4c57f395-39f4-4b9d-acef-d3ac54582b50%2C6fc9272d-80d8-4662-a87e-8b981c7304a8%2C9d893f7b-d05b-47cd-ac50-f63458ab2640%2Ce5302c04-87e9-4a25-8be4-21a6e409d9df%2C6eb3ed92-4c6a-49bf-8cd3-5fe5aac1fe47%2C86aa253d-70ac-4ce5-8b7f-b36615108510%2Cb0e293b7-fa0a-40ce-8aff-3eb837e41854%2C4c3f3d8e-4260-411e-854e-b7a46d5bff28%2C09fed126-4591-40ce-9bcf-9ee6e5b677af",
+ "favourites": [
+  "da669c1d-0231-4782-88a3-84d01c86e881",
+  "377c0e4d-1a53-4465-b74f-a8a23d6cd046",
+  "ce30f8bf-f8d2-4e78-aae8-f50856682b7f",
+  "8a4f052a-0149-4f51-baa9-090aaebaeda1",
+  "94732b16-9ba5-4cd2-a93f-adb08c82c281",
+  "560f6a1d-f651-4a18-ad24-1309634e0a62",
+  "1ed256a6-1baf-4757-b862-4a1c2b65222d",
+  "9a9c09e6-5586-42a8-b50a-58468db0c438",
+  "ea832af8-f776-444c-add1-a858af4e9d82",
+  "ad7b57c8-d223-4a56-8097-72f260832b44",
+  "2bf30495-de98-414b-974d-b2f03caf45df",
+  "fbca0698-d75b-4385-bc36-d1fed997d4e8",
+  "1f7591a6-ec8c-4438-8160-40688d9ab9cb",
+  "6825edb7-c19b-445f-ab54-8bf77bdabcb6",
+  "d4e1fab1-06f7-44bf-ad45-79fa6b8e8a64",
+  "7d69a7cc-dcbc-42e2-8f24-7a21c6c20122",
+  "d6c6f1b0-06f5-4d3e-94f2-315b3bdbb4fb",
+  "d732386f-0769-4f82-af34-ea0704506090",
+  "1c1423bd-4af2-4d4f-9201-85ed9505869f",
+  "4c57f395-39f4-4b9d-acef-d3ac54582b50",
+  "6fc9272d-80d8-4662-a87e-8b981c7304a8",
+  "9d893f7b-d05b-47cd-ac50-f63458ab2640",
+  "e5302c04-87e9-4a25-8be4-21a6e409d9df",
+  "6eb3ed92-4c6a-49bf-8cd3-5fe5aac1fe47",
+  "86aa253d-70ac-4ce5-8b7f-b36615108510",
+  "b0e293b7-fa0a-40ce-8aff-3eb837e41854",
+  "4c3f3d8e-4260-411e-854e-b7a46d5bff28",
+  "09fed126-4591-40ce-9bcf-9ee6e5b677af"
+ ],
+ "added": [
+  "high-potential-scalable-businesses",
+  "five-new-clients-30-days",
+  "personal-brand-corporate-clients",
+  "uk-startup-awards-national-final",
+  "zoky-sauna-reset",
+  "great-british-build-off",
+  "great-british-build-off-final",
+  "after-dark-wed",
+  "after-dark-thu",
+  "be-impossible-to-ignore",
+  "raising-to-grow",
+  "d2df5999-b644-41f5-bd71-79eccdc328ef",
+  "8dd3d9f1-033a-4a47-86bb-7a212d71a64e",
+  "6646ae56-b6a8-4ae5-b0f3-fff9a46a8149",
+  "6fa0e7fc-2e4f-43c2-861a-60410d345a4a",
+  "henry-engelhardt-good-boss"
+ ],
+ "curation": {
+  "high-potential-scalable-businesses": {
+   "fit": "core",
+   "why": "Investor-minded framing of a scalable business, on the morning of your final. Most-hearted; go early."
+  },
+  "ce30f8bf-f8d2-4e78-aae8-f50856682b7f": {
+   "fit": "good",
+   "why": "Fine 30-minute opener if Real Talk is rammed. Same slot as High Potential."
+  },
+  "henry-engelhardt-good-boss": {
+   "fit": "maybe",
+   "why": "Great founder, but leadership at Admiral scale is a year-two problem for vedrí."
+  },
+  "377c0e4d-1a53-4465-b74f-a8a23d6cd046": {
+   "fit": "skip",
+   "why": "Exit talk. You are opening a second studio, not selling the first."
+  },
+  "da669c1d-0231-4782-88a3-84d01c86e881": {
+   "fit": "skip",
+   "why": "Eats the whole morning. Better spent on High Potential then Getting Heard."
+  },
+  "9d6f53ce-e478-47b3-b06f-7b6cbbcd0f78": {
+   "fit": "skip",
+   "why": "Coaching-room session clashes with Getting Heard."
+  },
+  "94732b16-9ba5-4cd2-a93f-adb08c82c281": {
+   "fit": "core",
+   "why": "Cut-through marketing for a studio nobody has heard of yet. Most-hearted of the week."
+  },
+  "8a4f052a-0149-4f51-baa9-090aaebaeda1": {
+   "fit": "maybe",
+   "why": "Confidence and speaking up: useful before the 17:00 final, but Getting Heard is the better use of 11:00."
+  },
+  "15-minute-money-routine": {
+   "fit": "skip",
+   "why": "Bookkeeping routine. Clashes with Getting Heard."
+  },
+  "master-talking-to-strangers": {
+   "fit": "skip",
+   "why": "Clashes with Getting Heard; you already talk to strangers for a living."
+  },
+  "560f6a1d-f651-4a18-ad24-1309634e0a62": {
+   "fit": "good",
+   "why": "Practical AI for the admin side of a two-person studio. Slip out at 12:25 to make the Big Festoon."
+  },
+  "five-new-clients-30-days": {
+   "fit": "core",
+   "why": "The single most useful session for vedrí this autumn: client acquisition. Most-hearted of the whole festival, so arrive by 12:20."
+  },
+  "9a9c09e6-5586-42a8-b50a-58468db0c438": {
+   "fit": "good",
+   "why": "Simon Squibb's keynote clashes with '5 new clients'. Pick the clients talk; catch Squibb's crowd at HelpBnk Live on Thursday."
+  },
+  "1ed256a6-1baf-4757-b862-4a1c2b65222d": {
+   "fit": "skip",
+   "why": "Repeats Thursday 13:00, which is the better slot for you."
+  },
+  "67a512e2-3f25-4814-b20e-144a3ee7b7b3": {
+   "fit": "skip",
+   "why": "For operators and seconds-in-command."
+  },
+  "3d8a3ee7-b206-4400-a69a-f66f85bfa6fa": {
+   "fit": "skip",
+   "why": "Hour-long mindset deep dive in your busiest window."
+  },
+  "personal-brand-corporate-clients": {
+   "fit": "core",
+   "why": "Corporate clients through a founder's personal brand: exactly the LinkedIn-to-shoot pipeline in the vedrí marketing plan."
+  },
+  "ad7b57c8-d223-4a56-8097-72f260832b44": {
+   "fit": "maybe",
+   "why": "Woodroffe on brand memorability is fun, but the corporate-clients talk is the money one at 13:00."
+  },
+  "ea832af8-f776-444c-add1-a858af4e9d82": {
+   "fit": "skip",
+   "why": "Entertainment. Not a vedrí session."
+  },
+  "2bf30495-de98-414b-974d-b2f03caf45df": {
+   "fit": "skip",
+   "why": "Clashes with the corporate-clients talk."
+  },
+  "fbca0698-d75b-4385-bc36-d1fed997d4e8": {
+   "fit": "maybe",
+   "why": "Watch two or three pitches at 13:45 for tips before your own, then head to the sauna."
+  },
+  "great-british-build-off": {
+   "fit": "maybe",
+   "why": "You forwarded this to Aled to do remotely. Left out of the route; if you do build, it's 13:30–15:00 and eats the sauna."
+  },
+  "zoky-sauna-reset": {
+   "fit": "core",
+   "why": "Booked and paid. A 45-minute reset two hours before the final is a good call. Swimwear, two towels, waiver signed."
+  },
+  "be-impossible-to-ignore": {
+   "fit": "good",
+   "why": "Brand cut-through, most-hearted. Clashes with the sauna: the alternative if you skip the plunge."
+  },
+  "6fa0e7fc-2e4f-43c2-861a-60410d345a4a": {
+   "fit": "maybe",
+   "why": "Systems for running a business without you: relevant to a second studio, but it clashes with the sauna."
+  },
+  "17705f2d-9086-4123-a9eb-d988dc006c95": {
+   "fit": "skip",
+   "why": "Sales automation for teams; you don't have a sales team yet."
+  },
+  "1f7591a6-ec8c-4438-8160-40688d9ab9cb": {
+   "fit": "good",
+   "why": "You're raising. Join for the last 15 minutes after the sauna and stay for questions."
+  },
+  "simon-nicholls-sustainability-strategy": {
+   "fit": "skip",
+   "why": "General strategy talk; low relevance today."
+  },
+  "6825edb7-c19b-445f-ab54-8bf77bdabcb6": {
+   "fit": "maybe",
+   "why": "Deal negotiation is relevant once there's a term sheet. 'Are you investable?' at 15:30 is the priority."
+  },
+  "d4e1fab1-06f7-44bf-ad45-79fa6b8e8a64": {
+   "fit": "core",
+   "why": "Investment readiness and what a cash injection does. This is your second-studio question, 90 minutes before the final."
+  },
+  "7d69a7cc-dcbc-42e2-8f24-7a21c6c20122": {
+   "fit": "skip",
+   "why": "Exit readiness. Not now."
+  },
+  "d6c6f1b0-06f5-4d3e-94f2-315b3bdbb4fb": {
+   "fit": "skip",
+   "why": "Clashes with getting to the big top for your final."
+  },
+  "uk-startup-awards-national-final": {
+   "fit": "core",
+   "why": "Your final. Be at the Conversations That Matter big top by 16:30."
+  },
+  "d732386f-0769-4f82-af34-ea0704506090": {
+   "fit": "core",
+   "why": "Referral party straight after the awards. Best networking hour of the festival, with a finalist story to open with."
+  },
+  "after-dark-wed": {
+   "fit": "good",
+   "why": "You're camping on site. The fire pits are where the follow-ups happen."
+  },
+  "1c1423bd-4af2-4d4f-9201-85ed9505869f": {
+   "fit": "core",
+   "why": "Nine concrete jobs to hand to AI. Directly useful for a small studio's admin and marketing."
+  },
+  "4c57f395-39f4-4b9d-acef-d3ac54582b50": {
+   "fit": "maybe",
+   "why": "Good AMA but it clashes with the AI Den session."
+  },
+  "460aa0bb-c8b7-4636-becc-4f36360e4739": {
+   "fit": "skip",
+   "why": "Clashes with the AI Den; scaling-fast problems are not vedrí's yet."
+  },
+  "9d893f7b-d05b-47cd-ac50-f63458ab2640": {
+   "fit": "core",
+   "why": "Alex Packham built ContentCal for exactly the marketers vedrí sells to, sold it, and is going again. Founder, client insight and investment in one."
+  },
+  "6fc9272d-80d8-4662-a87e-8b981c7304a8": {
+   "fit": "good",
+   "why": "Greg Jackson is the big-name draw in the same slot. If Real Talk is full, this is the fallback, and Ideas Fest recommended it to you."
+  },
+  "e5302c04-87e9-4a25-8be4-21a6e409d9df": {
+   "fit": "maybe",
+   "why": "Stage presence is useful on camera, but it clashes with Packham and Jackson."
+  },
+  "6eb3ed92-4c6a-49bf-8cd3-5fe5aac1fe47": {
+   "fit": "skip",
+   "why": "Dreamland funding session clashes with the 11:00 conversations."
+  },
+  "b0e293b7-fa0a-40ce-8aff-3eb837e41854": {
+   "fit": "core",
+   "why": "Choosing the right investor for the second studio, not just any cheque."
+  },
+  "raising-to-grow": {
+   "fit": "good",
+   "why": "Most-hearted funding session. Clashes with 'The Right Money'; catch the second half in the Deal Room."
+  },
+  "86aa253d-70ac-4ce5-8b7f-b36615108510": {
+   "fit": "maybe",
+   "why": "Worth it only if the Wednesday was as long as it looks. Otherwise 'The Right Money'."
+  },
+  "09fed126-4591-40ce-9bcf-9ee6e5b677af": {
+   "fit": "core",
+   "why": "HelpBnk Live: bring one specific ask (a client intro, a creator collab) and vedrí gets in front of Squibb's audience."
+  },
+  "4c3f3d8e-4260-411e-854e-b7a46d5bff28": {
+   "fit": "good",
+   "why": "What growth costs, useful for the second-studio model. Clashes with HelpBnk Live."
+  },
+  "8dd3d9f1-033a-4a47-86bb-7a212d71a64e": {
+   "fit": "good",
+   "why": "Thea Green on building a consumer brand. Brand founders are vedrí clients."
+  },
+  "6646ae56-b6a8-4ae5-b0f3-fff9a46a8149": {
+   "fit": "good",
+   "why": "Fame plus founder is talent-led brand content, a shoot type vedrí wants."
+  },
+  "d8079a97-441f-45e9-8457-ddb87b0d32dd": {
+   "fit": "maybe",
+   "why": "Leadership conversations; clashes with the Sweet Spot Show."
+  },
+  "d2df5999-b644-41f5-bd71-79eccdc328ef": {
+   "fit": "core",
+   "why": "Priestley's repeatable weekly marketing routine. Take this home and run it."
+  },
+  "great-british-build-off-final": {
+   "fit": "maybe",
+   "why": "Only if your app is in the top six after the vote."
+  },
+  "after-dark-thu": {
+   "fit": "maybe",
+   "why": "DJ Fat Tony. Ask Frankie about that guest slot on the decks."
+  }
+ },
+ "profile": {
+  "who": "vedrí — North Wales' first virtual production studio, at DocShed, Gwynedd. Real-time green-screen compositing in-house, LED volumes hired in. Founder and studio director Daniel Parry Evans. UK StartUp Awards 2026 national finalist (Wales).",
+  "goals": [
+   "Win brand, agency and creator clients for VP shoots: podcasts, corporate, commercials",
+   "Find an investor for a second studio (pitch deck: vedri.studio/vedri-pitch-deck)",
+   "Sharpen positioning and a repeatable marketing routine for a capacity-limited studio",
+   "Hand admin, follow-up and content jobs to AI",
+   "Leave with introductions, not just notes: referral party Wednesday, fire pits both nights"
+  ]
+ }
+}

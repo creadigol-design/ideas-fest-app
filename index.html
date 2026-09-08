@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ideas Fest 2026 · vedrí</title>
+  <meta name="description" content="vedrí's companion app for Ideas Fest 2026 at Champneys Tring: plan, reminders and what's on now.">
+  <meta name="theme-color" content="#111118">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Ideas Fest">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
+
+  <header class="top">
+    <div class="brand">
+      <span class="wordmark">vedrí</span>
+      <span class="divider"></span>
+      <span class="event">Ideas Fest 2026</span>
+    </div>
+    <div class="clock" id="clock" aria-live="off">--:--</div>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab" data-tab="now" role="tab"><span class="ico">◉</span>Now</button>
+    <button class="tab" data-tab="plan" role="tab"><span class="ico">★</span>Plan</button>
+    <button class="tab" data-tab="agenda" role="tab"><span class="ico">≡</span>Agenda</button>
+    <button class="tab" data-tab="info" role="tab"><span class="ico">i</span>Info</button>
+    <button class="tab" data-tab="settings" role="tab"><span class="ico">⚙</span>Alerts</button>
+  </nav>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <!-- Session detail sheet -->
+  <div id="sheet" class="sheet" hidden>
+    <div class="sheet-backdrop" data-close></div>
+    <div class="sheet-panel" role="dialog" aria-modal="true">
+      <div class="sheet-handle"></div>
+      <div id="sheet-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
