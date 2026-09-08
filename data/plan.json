@@ -1,0 +1,52 @@
+{
+  "description": "Sessions favourited on ideasfest.uk (the ?plan= IDs) plus vedrí curation. IDs here are matched against data/sessions.json once the agenda is imported.",
+  "planUrl": "https://ideasfest.uk/agenda-2026?plan=da669c1d-0231-4782-88a3-84d01c86e881%2C377c0e4d-1a53-4465-b74f-a8a23d6cd046%2Cce30f8bf-f8d2-4e78-aae8-f50856682b7f%2C8a4f052a-0149-4f51-baa9-090aaebaeda1%2C94732b16-9ba5-4cd2-a93f-adb08c82c281%2C560f6a1d-f651-4a18-ad24-1309634e0a62%2C1ed256a6-1baf-4757-b862-4a1c2b65222d%2C9a9c09e6-5586-42a8-b50a-58468db0c438%2Cea832af8-f776-444c-add1-a858af4e9d82%2Cad7b57c8-d223-4a56-8097-72f260832b44%2C2bf30495-de98-414b-974d-b2f03caf45df%2Cfbca0698-d75b-4385-bc36-d1fed997d4e8%2C1f7591a6-ec8c-4438-8160-40688d9ab9cb%2C6825edb7-c19b-445f-ab54-8bf77bdabcb6%2Cd4e1fab1-06f7-44bf-ad45-79fa6b8e8a64%2C7d69a7cc-dcbc-42e2-8f24-7a21c6c20122%2Cd6c6f1b0-06f5-4d3e-94f2-315b3bdbb4fb%2Cd732386f-0769-4f82-af34-ea0704506090%2C1c1423bd-4af2-4d4f-9201-85ed9505869f%2C4c57f395-39f4-4b9d-acef-d3ac54582b50%2C6fc9272d-80d8-4662-a87e-8b981c7304a8%2C9d893f7b-d05b-47cd-ac50-f63458ab2640%2Ce5302c04-87e9-4a25-8be4-21a6e409d9df%2C6eb3ed92-4c6a-49bf-8cd3-5fe5aac1fe47%2C86aa253d-70ac-4ce5-8b7f-b36615108510%2Cb0e293b7-fa0a-40ce-8aff-3eb837e41854%2C4c3f3d8e-4260-411e-854e-b7a46d5bff28%2C09fed126-4591-40ce-9bcf-9ee6e5b677af",
+  "favourites": [
+    "da669c1d-0231-4782-88a3-84d01c86e881",
+    "377c0e4d-1a53-4465-b74f-a8a23d6cd046",
+    "ce30f8bf-f8d2-4e78-aae8-f50856682b7f",
+    "8a4f052a-0149-4f51-baa9-090aaebaeda1",
+    "94732b16-9ba5-4cd2-a93f-adb08c82c281",
+    "560f6a1d-f651-4a18-ad24-1309634e0a62",
+    "1ed256a6-1baf-4757-b862-4a1c2b65222d",
+    "9a9c09e6-5586-42a8-b50a-58468db0c438",
+    "ea832af8-f776-444c-add1-a858af4e9d82",
+    "ad7b57c8-d223-4a56-8097-72f260832b44",
+    "2bf30495-de98-414b-974d-b2f03caf45df",
+    "fbca0698-d75b-4385-bc36-d1fed997d4e8",
+    "1f7591a6-ec8c-4438-8160-40688d9ab9cb",
+    "6825edb7-c19b-445f-ab54-8bf77bdabcb6",
+    "d4e1fab1-06f7-44bf-ad45-79fa6b8e8a64",
+    "7d69a7cc-dcbc-42e2-8f24-7a21c6c20122",
+    "d6c6f1b0-06f5-4d3e-94f2-315b3bdbb4fb",
+    "d732386f-0769-4f82-af34-ea0704506090",
+    "1c1423bd-4af2-4d4f-9201-85ed9505869f",
+    "4c57f395-39f4-4b9d-acef-d3ac54582b50",
+    "6fc9272d-80d8-4662-a87e-8b981c7304a8",
+    "9d893f7b-d05b-47cd-ac50-f63458ab2640",
+    "e5302c04-87e9-4a25-8be4-21a6e409d9df",
+    "6eb3ed92-4c6a-49bf-8cd3-5fe5aac1fe47",
+    "86aa253d-70ac-4ce5-8b7f-b36615108510",
+    "b0e293b7-fa0a-40ce-8aff-3eb837e41854",
+    "4c3f3d8e-4260-411e-854e-b7a46d5bff28",
+    "09fed126-4591-40ce-9bcf-9ee6e5b677af",
+    "headliner-simon-squibb",
+    "headliner-daniel-priestley"
+  ],
+  "curation": {
+    "headliner-simon-squibb": { "fit": "core", "why": "Squibb built an audience with short-form video. Directly relevant to how vedrí wins creator and brand clients, and to our own content." },
+    "headliner-daniel-priestley": { "fit": "core", "why": "Positioning and demand for a niche studio. Priestley's 'oversubscribed' model is the playbook for a studio with limited stage days to sell." },
+    "simon-nicholls-sustainability-strategy": { "fit": "maybe", "why": "Sustainability is a real VP selling point (no location travel, less waste) but this is a general strategy talk. Go if nothing better clashes." },
+    "headliner-ruby-wax": { "fit": "maybe", "why": "Good energy, low commercial relevance. Worth it only as a break." }
+  },
+  "profile": {
+    "who": "vedrí — independent virtual production studio at DocShed, Gwynedd. Real-time green-screen compositing in-house, LED volumes hired in. Led by Daniel Evans.",
+    "goals": [
+      "Win more brand, agency and creator clients for VP shoots (podcasts, corporate, commercials)",
+      "Sharpen positioning and pricing for a niche, capacity-limited studio",
+      "Learn how AI is changing video, content and production workflows",
+      "Meet founders who need video at scale (podcasters, course creators, DTC brands)",
+      "Understand funding, grants and growth options for a creative studio in North Wales"
+    ]
+  }
+}
