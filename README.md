@@ -57,4 +57,8 @@ Then open `http://localhost:8080/?now=2026-09-09T10:00` to preview the "during t
 
 ## Deployment
 
-`.github/workflows/pages.yml` publishes the repo root to GitHub Pages on every push to `main` or a `claude/**` branch.
+`.github/workflows/pages.yml` publishes the repo root to the `gh-pages` branch on every push to `main` or a `claude/**` branch. GitHub serves that branch at <https://creadigol-design.github.io/ideas-fest-app/>.
+
+If that URL shows a 404, Pages hasn't been switched on for the repo yet: Settings → Pages → Build and deployment → Source **Deploy from a branch** → branch `gh-pages`, folder `/ (root)` → Save. It goes live within a minute.
+
+A read-only preview copy (no reminders, data inlined) is also published as a Claude artifact for quick sharing.
