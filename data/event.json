@@ -1,46 +1,93 @@
 {
-  "name": "Ideas Fest 2026",
-  "tagline": "The festival for business leaders and entrepreneurs",
-  "days": ["2026-09-09", "2026-09-10"],
-  "timezone": "Europe/London",
-  "venue": {
-    "name": "Champneys Tring",
-    "address": "Champneys Tring, Wigginton, Tring, Hertfordshire",
-    "postcode": "HP23 6HY",
-    "mapsUrl": "https://maps.google.com/?q=Champneys+Tring+HP23+6HY"
-  },
-  "hours": {
-    "gatesOpen": "08:00",
-    "programme": "09:15–19:00 (main programme 9am–6pm)",
-    "afterDark": "Evening programme runs until late on Wednesday 9 September; site closes 23:00 on Thursday 10 September"
-  },
-  "travel": {
-    "road": "Just off the A41, around 40 minutes from central London. Onsite parking is bookable in advance; off-site parking via Saba Park Services in Tring.",
-    "rail": "Nearest station is Tring (Avanti West Coast / London Northwestern), about 35 minutes from London Euston. A shuttle runs between Tring station and the venue.",
-    "fromDocShed": "From DocShed, Gwynedd allow roughly 4 hours by road (A55 → M56 → M6 → M1/A41). Aim to leave by 04:30 on Wednesday to make gates at 08:00, or travel Tuesday evening."
-  },
-  "stages": [
-    "The Main Stage",
-    "Founders Forum",
-    "The Workshop",
-    "Scale-Up Zone",
-    "Next Gen Stage",
-    "Purpose Pavilion",
-    "Engine Room, Growth Village"
+ "name": "Ideas Fest 2026",
+ "tagline": "The festival for business leaders and entrepreneurs",
+ "days": [
+  "2026-09-09",
+  "2026-09-10"
+ ],
+ "timezone": "Europe/London",
+ "venue": {
+  "name": "Champneys Tring",
+  "address": "Champneys Tring, Wigginton, Tring, Hertfordshire",
+  "postcode": "HP23 6HY",
+  "mapsUrl": "https://maps.google.com/?q=Champneys+Tring+HP23+6HY"
+ },
+ "hours": {
+  "gatesOpen": "08:00",
+  "programme": "09:15–19:00 (main programme 9am–6pm)",
+  "afterDark": "Live music and DJ sets until 22:45 both nights: Rick Parfitt Jnr and the RPJ Band on Wednesday, DJ Fat Tony on Thursday. Fire pit sessions after."
+ },
+ "travel": {
+  "road": "Just off the A41, about 40 minutes from central London. Parking is pre-booked only: ANPR reads every plate on entry. Your order includes a campervan pitch, so you're sleeping on site both nights.",
+  "rail": "Nearest station is Tring (Avanti West Coast / London Northwestern), about 35 minutes from London Euston. A shuttle runs between Tring station and the venue.",
+  "fromDocShed": "From DocShed, Gwynedd allow roughly 4 hours by road (A55 → M56 → M6 → M1/A41). Aim to leave by 04:30 on Wednesday to make gates at 08:00, or travel Tuesday evening."
+ },
+ "stages": [
+  "Build Off area (check WhatsApp channel)",
+  "Camp Fire",
+  "Conversations That Matter",
+  "Deep Dive",
+  "Dreamland: The Acorn Stage",
+  "Dreamland: The Inspiration Stage",
+  "Exit Lounge",
+  "Founder Recovery zone",
+  "Greenhouse",
+  "IronMarket Finance & Growth Tent",
+  "Launch Pad",
+  "Main Build Off stage (TBC)",
+  "Main arena",
+  "Main arena and fire pits",
+  "Real Talk",
+  "The AI Den",
+  "The Big Festoon",
+  "The Boardroom Powered By CEO Friend",
+  "The Deal Room",
+  "The Engine Room Powered By It Takes Two",
+  "The Fineprint*",
+  "The Founder Coaching Room",
+  "The Xero Stage",
+  "Think Tank",
+  "Tool Shed"
+ ],
+ "headliners": [
+  "Simon Squibb",
+  "Daniel Priestley",
+  "Ruby Wax"
+ ],
+ "links": {
+  "site": "https://ideasfest.uk",
+  "agenda": "https://ideasfest.uk/agenda-2026",
+  "speakers": "https://ideasfest.uk/speakers",
+  "stages": "https://ideasfest.uk/stages-zones/",
+  "info": "https://ideasfest.uk/everything-you-need-to-know",
+  "parking": "https://ideasfest.uk/parking-ideas-fest/",
+  "tickets": "https://ideasfest.uk/2026-tickets/"
+ },
+ "notes": [
+  "All stages and most zones are covered, but it's a festival field: layers and boots.",
+  "Tickets are non-refundable but transferable.",
+  "Sessions move right up to the day. The WhatsApp concierge and the official agenda are the source of truth for room changes."
+ ],
+ "you": {
+  "tickets": "2 × two-day passes (UK StartUp Awards finalist rate) plus a campervan pitch, order #79744207. Ticket email from ideasfest@buytickets.at, 17 July.",
+  "awards": "UK StartUp Awards National Final, Wednesday 17:00, Conversations That Matter big top (moved from Real Talk). vedrí is a finalist.",
+  "bookings": [
+   "Zoky Saunascape sauna and plunge, Wednesday 14:00–15:00, Founder Recovery zone. Sign the waiver first.",
+   "The Great British Build Off (Macaly AI), Wednesday 13:30–15:00. Access link arrives in the Build Off WhatsApp channel. You forwarded it to Aled."
   ],
-  "headliners": ["Simon Squibb", "Daniel Priestley", "Ruby Wax"],
-  "links": {
-    "site": "https://ideasfest.uk",
-    "agenda": "https://ideasfest.uk/agenda-2026",
-    "speakers": "https://ideasfest.uk/speakers",
-    "stages": "https://ideasfest.uk/stages-zones/",
-    "info": "https://ideasfest.uk/everything-you-need-to-know",
-    "parking": "https://ideasfest.uk/parking-ideas-fest/",
-    "tickets": "https://ideasfest.uk/2026-tickets/"
-  },
-  "notes": [
-    "All stages and most zones are covered, but this is a festival site: bring layers and boots for the fields.",
-    "Tickets are non-refundable but transferable.",
-    "Sessions are released and moved right up to the day. Re-check the official agenda each morning and re-import if anything shifts."
+  "offers": [
+   "TableTalk podcast: Ed Fowkes is doing live on-stage interviews with finalists, shown on the big screens. Dylan sent a booking form on 28 August; check whether you filled it in.",
+   "Frankie James offered you a go on the decks after you replied to his DJ email."
+  ],
+  "concierge": "Ideas Fest WhatsApp concierge (automated): +44 7988 032598. Ask it where a stage is or what's on next.",
+  "workspace": "The Stoneway Workspace Hub is a quiet on-site space for calls and meetings. Walk-ins on the day.",
+  "packing": [
+   "Ticket QR from the buytickets.at email",
+   "Swimwear, two towels and water for the sauna",
+   "Business cards or LinkedIn QR",
+   "Battery pack: you'll be on your phone all day",
+   "Layers and boots for a field in September",
+   "The pitch deck link ready to share: vedri.studio/vedri-pitch-deck"
   ]
+ }
 }

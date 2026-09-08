@@ -1,54 +1,906 @@
 {
-  "updated": "2026-09-08T18:00:00Z",
-  "source": "Seeded from public announcements. The full agenda at ideasfest.uk/agenda-2026 could not be fetched from the build environment. Use Alerts → Agenda data to import the rest, or replace this file.",
-  "sessions": [
-    {
-      "id": "simon-nicholls-sustainability-strategy",
-      "title": "Sustainability Is a Strategy, Not a Sticker",
-      "speakers": ["Simon Nicholls (Founder & CEO, Olympus Power)"],
-      "day": "2026-09-09",
-      "start": "15:00",
-      "end": "15:45",
-      "stage": "Engine Room, Growth Village",
-      "description": "How businesses can make sustainability a genuine part of commercial strategy: where to start, how to build trust, and how sustainability can support long-term business performance.",
-      "tags": ["sustainability", "strategy"],
-      "url": "https://ideasfest.uk/agenda-2026"
-    },
-    {
-      "id": "headliner-simon-squibb",
-      "title": "Simon Squibb (Main Stage headliner)",
-      "speakers": ["Simon Squibb"],
-      "day": "2026-09-09",
-      "start": null,
-      "end": null,
-      "stage": "The Main Stage",
-      "description": "Founder of HelpBnk and one of the UK's biggest business creators. Announced as a 2026 headliner; time and day to be confirmed from the official agenda.",
-      "tags": ["creator", "content", "brand", "storytelling", "headliner"],
-      "url": "https://ideasfest.uk/speakers"
-    },
-    {
-      "id": "headliner-daniel-priestley",
-      "title": "Daniel Priestley (Main Stage headliner)",
-      "speakers": ["Daniel Priestley"],
-      "day": "2026-09-09",
-      "start": null,
-      "end": null,
-      "stage": "The Main Stage",
-      "description": "Author of Oversubscribed and Key Person of Influence. Announced as a 2026 headliner; time and day to be confirmed from the official agenda.",
-      "tags": ["marketing", "positioning", "demand", "brand", "headliner"],
-      "url": "https://ideasfest.uk/speakers"
-    },
-    {
-      "id": "headliner-ruby-wax",
-      "title": "Ruby Wax (Main Stage headliner)",
-      "speakers": ["Ruby Wax"],
-      "day": "2026-09-10",
-      "start": null,
-      "end": null,
-      "stage": "The Main Stage",
-      "description": "Comedian, writer and mental health campaigner. Announced as a 2026 headliner; time and day to be confirmed from the official agenda.",
-      "tags": ["wellbeing", "leadership", "headliner"],
-      "url": "https://ideasfest.uk/speakers"
-    }
-  ]
+ "updated": "2026-09-08T19:30:00Z",
+ "source": "Built from Ideas Fest's 'your agenda' and 'this is your Ideas Fest' emails (6 Sept), the most-hearted list (2 Sept), UK StartUp Awards, Macaly and Zoky booking emails. Session IDs for saved sessions are taken from your plan link. Times marked 'estimated' had no published end time.",
+ "sessions": [
+  {
+   "id": "da669c1d-0231-4782-88a3-84d01c86e881",
+   "title": "Bigger Than Business (Talks that make you look out)",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "10:00",
+   "end": "11:15",
+   "stage": "Think Tank",
+   "description": "A 75-minute block of outward-looking talks.",
+   "tags": [
+    "saved"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "377c0e4d-1a53-4465-b74f-a8a23d6cd046",
+   "title": "1,000 Days to Exit",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "10:00",
+   "end": "10:30",
+   "stage": "Exit Lounge",
+   "description": "One of the most-hearted sessions of the week: a three-year runway to selling a business.",
+   "tags": [
+    "saved",
+    "exit",
+    "popular"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "ce30f8bf-f8d2-4e78-aae8-f50856682b7f",
+   "title": "Turning Vision Into Reality",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "10:00",
+   "end": "10:30",
+   "stage": "Dreamland: The Acorn Stage",
+   "description": "HelpBnk's Dreamland stage: taking an idea from vision to a working business.",
+   "tags": [
+    "saved",
+    "founder"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "8a4f052a-0149-4f51-baa9-090aaebaeda1",
+   "title": "Confidence: The Permission Slip You've Been Waiting For: Speak Up, Cash In",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "11:00",
+   "end": "12:00",
+   "stage": "The Big Festoon",
+   "description": "Confidence and speaking up as a commercial skill.",
+   "tags": [
+    "saved",
+    "speaking",
+    "mindset"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "94732b16-9ba5-4cd2-a93f-adb08c82c281",
+   "title": "Getting Heard When Everyone's Shouting",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "11:00",
+   "end": "11:45",
+   "stage": "The Boardroom Powered By CEO Friend",
+   "description": "Cut-through marketing for businesses competing for attention. One of the most-hearted sessions of the week.",
+   "tags": [
+    "saved",
+    "marketing",
+    "brand",
+    "popular"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "560f6a1d-f651-4a18-ad24-1309634e0a62",
+   "title": "AI Is Doing the Boring Bits",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "12:00",
+   "end": "12:40",
+   "stage": "The Xero Stage",
+   "description": "Practical AI for admin, finance and the repetitive jobs in a small business.",
+   "tags": [
+    "saved",
+    "ai",
+    "automation",
+    "tools"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "1ed256a6-1baf-4757-b862-4a1c2b65222d",
+   "title": "HelpBnk Live: Get Help With Your Business",
+   "speakers": [
+    "HelpBnk"
+   ],
+   "day": "2026-09-09",
+   "start": "12:30",
+   "end": "13:30",
+   "stage": "Dreamland: The Acorn Stage",
+   "description": "Live help clinic from Simon Squibb's HelpBnk. Bring a real problem; there is a repeat on Thursday at 13:00.",
+   "tags": [
+    "saved",
+    "creator",
+    "content",
+    "help"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "9a9c09e6-5586-42a8-b50a-58468db0c438",
+   "title": "HEADLINE KEYNOTE: WHAT'S YOUR DREAM?",
+   "speakers": [
+    "Simon Squibb"
+   ],
+   "day": "2026-09-09",
+   "start": "12:30",
+   "end": "13:00",
+   "stage": "Dreamland: The Inspiration Stage",
+   "description": "Simon Squibb's headline keynote on the Dreamland stage.",
+   "tags": [
+    "saved",
+    "headliner",
+    "creator",
+    "content",
+    "brand",
+    "storytelling"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "ea832af8-f776-444c-add1-a858af4e9d82",
+   "title": "In Conversation with Boxing Legend Frank Bruno",
+   "speakers": [
+    "Frank Bruno"
+   ],
+   "day": "2026-09-09",
+   "start": "13:00",
+   "end": "13:45",
+   "stage": "Real Talk",
+   "description": "Conversation with the former heavyweight champion.",
+   "tags": [
+    "saved",
+    "entertainment"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "ad7b57c8-d223-4a56-8097-72f260832b44",
+   "title": "Yo! Or No, with Simon Woodroffe",
+   "speakers": [
+    "Simon Woodroffe"
+   ],
+   "day": "2026-09-09",
+   "start": "13:00",
+   "end": "13:45",
+   "stage": "Conversations That Matter",
+   "description": "The YO! Sushi founder on building a brand people remember.",
+   "tags": [
+    "saved",
+    "brand",
+    "founder"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "2bf30495-de98-414b-974d-b2f03caf45df",
+   "title": "Kindness as a Model for Business",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "13:00",
+   "end": "13:30",
+   "stage": "Dreamland: The Inspiration Stage",
+   "description": "Kindness as a business model.",
+   "tags": [
+    "saved",
+    "culture"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "fbca0698-d75b-4385-bc36-d1fed997d4e8",
+   "title": "Pitch Perfect | Powered by the Dream Fund",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "13:30",
+   "end": "14:30",
+   "stage": "Dreamland: The Inspiration Stage",
+   "description": "Live pitch competition for the Dream Fund. Useful to watch a few pitches before your own final at 17:00.",
+   "tags": [
+    "saved",
+    "pitch",
+    "funding",
+    "investment"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "1f7591a6-ec8c-4438-8160-40688d9ab9cb",
+   "title": "The Eyes of an Investor",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "14:30",
+   "end": "15:15",
+   "stage": "The Fineprint*",
+   "description": "What investors actually look for when they read a deck and meet a founder.",
+   "tags": [
+    "saved",
+    "investment",
+    "funding",
+    "investor",
+    "raise"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "6825edb7-c19b-445f-ab54-8bf77bdabcb6",
+   "title": "Negotiating the Deal You Deserve",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "15:10",
+   "end": "15:50",
+   "stage": "Exit Lounge",
+   "description": "Negotiating terms, valuation and deal structure.",
+   "tags": [
+    "saved",
+    "investment",
+    "negotiation"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "d4e1fab1-06f7-44bf-ad45-79fa6b8e8a64",
+   "title": "Are you investable? What could a cash injection do for you and your business?",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "15:30",
+   "end": "16:00",
+   "stage": "The Big Festoon",
+   "description": "Whether your business is ready for investment and what the money would actually do.",
+   "tags": [
+    "saved",
+    "investment",
+    "funding",
+    "investor",
+    "raise"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "7d69a7cc-dcbc-42e2-8f24-7a21c6c20122",
+   "title": "Exit Readiness",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "16:00",
+   "end": "16:45",
+   "stage": "The Fineprint*",
+   "description": "Getting a business ready to sell.",
+   "tags": [
+    "saved",
+    "exit"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "d6c6f1b0-06f5-4d3e-94f2-315b3bdbb4fb",
+   "title": "Lightning Talks + Open Mic",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "16:30",
+   "end": "17:30",
+   "stage": "Think Tank",
+   "description": "Short talks and an open mic.",
+   "tags": [
+    "saved",
+    "speaking"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "d732386f-0769-4f82-af34-ea0704506090",
+   "title": "The Festoon 500 Meet Up & Referral Party",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "18:30",
+   "end": "19:30",
+   "stage": "The Big Festoon",
+   "description": "Referral-focused networking party. Straight after the awards, with a finalist story to tell.",
+   "tags": [
+    "saved",
+    "network",
+    "referral",
+    "clients",
+    "partnership"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "1c1423bd-4af2-4d4f-9201-85ed9505869f",
+   "title": "Nine Jobs You Could Give to AI Tomorrow",
+   "speakers": [],
+   "day": "2026-09-10",
+   "start": "09:30",
+   "end": "10:30",
+   "stage": "The AI Den",
+   "description": "Practical, specific jobs to hand to AI this week.",
+   "tags": [
+    "saved",
+    "ai",
+    "automation",
+    "workflow",
+    "tools"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "4c57f395-39f4-4b9d-acef-d3ac54582b50",
+   "title": "5 Decades Building a £50m empire... ask me anything",
+   "speakers": [],
+   "day": "2026-09-10",
+   "start": "10:00",
+   "end": "10:45",
+   "stage": "Tool Shed",
+   "description": "Open Q&A with a founder who has built over five decades.",
+   "tags": [
+    "saved",
+    "founder",
+    "growth"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "6fc9272d-80d8-4662-a87e-8b981c7304a8",
+   "title": "In Conversation with Greg Jackson, Founder and CEO of Octopus Energy",
+   "speakers": [
+    "Greg Jackson"
+   ],
+   "day": "2026-09-10",
+   "start": "11:00",
+   "end": "11:45",
+   "stage": "Conversations That Matter",
+   "description": "Octopus Energy's founder on brand, culture and scaling. Ideas Fest also recommended this one to you.",
+   "tags": [
+    "saved",
+    "recommended",
+    "brand",
+    "scale",
+    "leadership"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "9d893f7b-d05b-47cd-ac50-f63458ab2640",
+   "title": "In conversation with Alex Packham: Building It, Selling It, Doing It Again",
+   "speakers": [
+    "Alex Packham"
+   ],
+   "day": "2026-09-10",
+   "start": "11:00",
+   "end": "11:45",
+   "stage": "Real Talk",
+   "description": "ContentCal founder (content-marketing SaaS, sold to Adobe) on building, exiting and going again. His world is vedrí's client base: marketers and content teams.",
+   "tags": [
+    "saved",
+    "content",
+    "marketing",
+    "founder",
+    "exit",
+    "investment"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "e5302c04-87e9-4a25-8be4-21a6e409d9df",
+   "title": "Performance: Steal the Tent",
+   "speakers": [],
+   "day": "2026-09-10",
+   "start": "11:00",
+   "end": "11:50",
+   "stage": "The Big Festoon",
+   "description": "Stage presence and performance skills.",
+   "tags": [
+    "saved",
+    "speaking",
+    "stage presence"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "6eb3ed92-4c6a-49bf-8cd3-5fe5aac1fe47",
+   "title": "Fund Your Dream",
+   "speakers": [],
+   "day": "2026-09-10",
+   "start": "11:00",
+   "end": "11:30",
+   "stage": "Dreamland: The Inspiration Stage",
+   "description": "Dreamland session on funding routes.",
+   "tags": [
+    "saved",
+    "funding"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "86aa253d-70ac-4ce5-8b7f-b36615108510",
+   "title": "Burnout Recovery",
+   "speakers": [],
+   "day": "2026-09-10",
+   "start": "12:00",
+   "end": "12:45",
+   "stage": "Camp Fire",
+   "description": "Recovering from founder burnout.",
+   "tags": [
+    "saved",
+    "wellbeing",
+    "burnout"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "b0e293b7-fa0a-40ce-8aff-3eb837e41854",
+   "title": "The Right Money vs. Any Money",
+   "speakers": [],
+   "day": "2026-09-10",
+   "start": "12:00",
+   "end": "12:45",
+   "stage": "Launch Pad",
+   "description": "Choosing the right investor and terms rather than the first cheque.",
+   "tags": [
+    "saved",
+    "investment",
+    "funding",
+    "investor",
+    "raise"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "4c3f3d8e-4260-411e-854e-b7a46d5bff28",
+   "title": "The Hidden Costs of Growth",
+   "speakers": [],
+   "day": "2026-09-10",
+   "start": "13:00",
+   "end": "13:45",
+   "stage": "IronMarket Finance & Growth Tent",
+   "description": "What growth really costs. Relevant to modelling a second studio.",
+   "tags": [
+    "saved",
+    "growth",
+    "finance",
+    "scale"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "09fed126-4591-40ce-9bcf-9ee6e5b677af",
+   "title": "HelpBnk Live: Get Help With Your Business",
+   "speakers": [
+    "HelpBnk"
+   ],
+   "day": "2026-09-10",
+   "start": "13:00",
+   "end": "14:00",
+   "stage": "Dreamland: The Acorn Stage",
+   "description": "Live help clinic from Simon Squibb's HelpBnk. A chance to put vedrí in front of a creator audience with a real ask.",
+   "tags": [
+    "saved",
+    "creator",
+    "content",
+    "help",
+    "brand"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "henry-engelhardt-good-boss",
+   "title": "How To Be A Good Boss: In conversation with Admiral founder Henry Engelhardt",
+   "speakers": [
+    "Henry Engelhardt"
+   ],
+   "day": "2026-09-09",
+   "start": "10:00",
+   "end": "10:45",
+   "stage": "Conversations That Matter",
+   "description": "Admiral's founder on leadership and culture. Recommended to you by Ideas Fest.",
+   "tags": [
+    "recommended",
+    "leadership",
+    "culture"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "9d6f53ce-e478-47b3-b06f-7b6cbbcd0f78",
+   "title": "Why Scaling Changes Your Identity",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "10:30",
+   "end": "11:45",
+   "stage": "The Founder Coaching Room",
+   "description": "Founder coaching conversation hosted by Pam Bateson of Thrive, with live coaching afterwards.",
+   "tags": [
+    "recommended",
+    "mindset",
+    "scale"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "67a512e2-3f25-4814-b20e-144a3ee7b7b3",
+   "title": "The Bit They Don't Put in the Keynote",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "12:25",
+   "end": "12:55",
+   "stage": "The Engine Room Powered By It Takes Two",
+   "description": "For operators and second-in-commands.",
+   "tags": [
+    "recommended",
+    "operations"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "3d8a3ee7-b206-4400-a69a-f66f85bfa6fa",
+   "title": "Imposter Syndrome Is a Nervous System Glitch. Stop Managing It and Let's See How to Recalibrate It.",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "12:30",
+   "end": "13:30",
+   "stage": "Deep Dive",
+   "description": "Extended deep-dive session.",
+   "tags": [
+    "recommended",
+    "mindset"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "6fa0e7fc-2e4f-43c2-861a-60410d345a4a",
+   "title": "Build It to Run Without You: The Founder's Guide to Scaling Beyond Yourself",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "14:00",
+   "end": "14:45",
+   "stage": "IronMarket Finance & Growth Tent",
+   "description": "Systems and people so the business runs without the founder. Directly relevant to running two studios.",
+   "tags": [
+    "recommended",
+    "scale",
+    "systems",
+    "growth"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "17705f2d-9086-4123-a9eb-d988dc006c95",
+   "title": "The Sales Work Your Team Never Gets To",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "14:00",
+   "end": "14:45",
+   "stage": "The AI Den",
+   "description": "AI for the sales follow-up nobody gets to.",
+   "tags": [
+    "recommended",
+    "ai",
+    "sales"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "460aa0bb-c8b7-4636-becc-4f36360e4739",
+   "title": "What Breaks When You Scale Fast?",
+   "speakers": [],
+   "day": "2026-09-10",
+   "start": "10:00",
+   "end": "10:45",
+   "stage": "Greenhouse",
+   "description": "Failure points in fast growth.",
+   "tags": [
+    "recommended",
+    "scale"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "8dd3d9f1-033a-4a47-86bb-7a212d71a64e",
+   "title": "In Conversation with Thea Green, Founder of Nails Inc",
+   "speakers": [
+    "Thea Green"
+   ],
+   "day": "2026-09-10",
+   "start": "14:00",
+   "end": "14:45",
+   "stage": "Conversations That Matter",
+   "description": "Building a consumer brand from scratch.",
+   "tags": [
+    "recommended",
+    "brand",
+    "founder"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "d8079a97-441f-45e9-8457-ddb87b0d32dd",
+   "title": "The Hard Conversations That Unlock Growth",
+   "speakers": [],
+   "day": "2026-09-10",
+   "start": "15:00",
+   "end": "15:45",
+   "stage": "The Boardroom Powered By CEO Friend",
+   "description": "Difficult conversations that move a business forward.",
+   "tags": [
+    "recommended",
+    "leadership",
+    "growth"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "6646ae56-b6a8-4ae5-b0f3-fff9a46a8149",
+   "title": "The Sweet Spot Show: When Fame Meets Founder",
+   "speakers": [],
+   "day": "2026-09-10",
+   "start": "15:00",
+   "end": "15:45",
+   "stage": "Conversations That Matter",
+   "description": "Celebrity meets founder: how fame and brands build businesses together. Talent-led brand content is a vedrí client type.",
+   "tags": [
+    "recommended",
+    "brand",
+    "content",
+    "creator",
+    "storytelling"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "d2df5999-b644-41f5-bd71-79eccdc328ef",
+   "title": "The Perfect Repeatable Week Marketing Plan with Daniel Priestley",
+   "speakers": [
+    "Daniel Priestley"
+   ],
+   "day": "2026-09-10",
+   "start": "16:00",
+   "end": "16:45",
+   "stage": "Conversations That Matter",
+   "description": "Priestley's repeatable weekly marketing routine. The playbook for a capacity-limited studio that needs to stay oversubscribed.",
+   "tags": [
+    "recommended",
+    "headliner",
+    "marketing",
+    "positioning",
+    "demand",
+    "brand"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "high-potential-scalable-businesses",
+   "title": "High Potential: Turning Big Ideas into Scalable Businesses",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "10:00",
+   "end": "10:45",
+   "stage": "Real Talk",
+   "description": "One of the most-hearted sessions of the week. End time estimated.",
+   "tags": [
+    "popular",
+    "scale",
+    "investment",
+    "founder"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "15-minute-money-routine",
+   "title": "The 15-Minute Money Routine",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "11:00",
+   "end": "11:45",
+   "stage": "The Xero Stage",
+   "description": "Most-hearted this week. End time estimated.",
+   "tags": [
+    "popular",
+    "finance"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "master-talking-to-strangers",
+   "title": "Master the Art of Talking to Strangers",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "11:30",
+   "end": "12:15",
+   "stage": "Think Tank",
+   "description": "Networking skills. Most-hearted this week. End time estimated.",
+   "tags": [
+    "popular",
+    "network"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "five-new-clients-30-days",
+   "title": "How to get 5 new clients in the next 30 days, and then build a 7-figure business",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "12:30",
+   "end": "13:00",
+   "stage": "The Big Festoon",
+   "description": "The most-hearted session of the week. Client acquisition, which is vedrí's number one job this autumn. End time estimated (Big Festoon runs 30-minute slots); if it overruns, slip out at 13:00 for the corporate-clients talk. Arrive by 12:20, it will be full.",
+   "tags": [
+    "popular",
+    "clients",
+    "sales",
+    "marketing",
+    "growth"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "personal-brand-corporate-clients",
+   "title": "How Your Personal Brand Can Open Doors to Corporate Clients",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "13:00",
+   "end": "13:45",
+   "stage": "IronMarket Finance & Growth Tent",
+   "description": "Using a founder's personal brand to land corporate clients. Most-hearted this week. End time estimated.",
+   "tags": [
+    "popular",
+    "personal brand",
+    "clients",
+    "marketing",
+    "b2b",
+    "content"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "be-impossible-to-ignore",
+   "title": "Be Impossible to Ignore",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "14:00",
+   "end": "14:45",
+   "stage": "Real Talk",
+   "description": "Standing out as a brand. Most-hearted this week. End time estimated.",
+   "tags": [
+    "popular",
+    "marketing",
+    "brand",
+    "positioning"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "raising-to-grow",
+   "title": "Raising to Grow",
+   "speakers": [],
+   "day": "2026-09-10",
+   "start": "12:30",
+   "end": "13:15",
+   "stage": "The Deal Room",
+   "description": "Raising investment to fund growth. Most-hearted this week. End time estimated.",
+   "tags": [
+    "popular",
+    "investment",
+    "funding",
+    "raise",
+    "investor"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "simon-nicholls-sustainability-strategy",
+   "title": "Sustainability Is a Strategy, Not a Sticker",
+   "speakers": [
+    "Simon Nicholls (Founder & CEO, Olympus Power)"
+   ],
+   "day": "2026-09-09",
+   "start": "15:00",
+   "end": "15:45",
+   "stage": "The Engine Room Powered By It Takes Two",
+   "description": "Making sustainability part of commercial strategy.",
+   "tags": [
+    "sustainability",
+    "strategy"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "uk-startup-awards-national-final",
+   "title": "UK StartUp Awards National Final (vedrí is a finalist)",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "17:00",
+   "end": "18:30",
+   "stage": "Conversations That Matter",
+   "description": "Your final. Moved from Real Talk to the Conversations That Matter big top (blue, you can't miss it). Be there by 16:30. Duration estimated. Have the pitch deck link ready: vedri.studio/vedri-pitch-deck",
+   "tags": [
+    "commitment",
+    "awards",
+    "pitch",
+    "investment"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "zoky-sauna-reset",
+   "title": "Sauna & plunge: Reset & Recharge (booked)",
+   "speakers": [
+    "Zoky Saunascape"
+   ],
+   "day": "2026-09-09",
+   "start": "14:00",
+   "end": "15:00",
+   "stage": "Founder Recovery zone",
+   "description": "Your booked place (1). Bring swimwear, two towels and water. Sign the waiver from the confirmation email before you go. 45 minutes in the wood-fired sauna and plunge pools, then a chill-out area.",
+   "tags": [
+    "commitment",
+    "wellbeing"
+   ],
+   "url": "https://minside.periode.no/bookings/HzuRAnjKCcUf2fBsEuat/oyHrnGJbPH7QRwmPo7Bx"
+  },
+  {
+   "id": "great-british-build-off",
+   "title": "The Great British Build Off (Macaly AI): 90-minute live build",
+   "speakers": [
+    "Macaly AI"
+   ],
+   "day": "2026-09-09",
+   "start": "13:30",
+   "end": "15:00",
+   "stage": "Build Off area (check WhatsApp channel)",
+   "description": "You're entered. Build a working app in 90 minutes, then the public vote runs until midnight; top 6 pitch live on Thursday. Can be done remotely: you forwarded it to Aled, so if he's covering it you're free for the sauna and the 13:00 talk. Access link and reminders arrive in the Build Off WhatsApp channel.",
+   "tags": [
+    "optional",
+    "ai",
+    "tools"
+   ],
+   "url": "https://whatsapp.com/channel/0029VbDoZmm5PO10tfT11n0f"
+  },
+  {
+   "id": "great-british-build-off-final",
+   "title": "Great British Build Off: top 6 pitch live (only if you make the cut)",
+   "speakers": [
+    "Macaly AI"
+   ],
+   "day": "2026-09-10",
+   "start": null,
+   "end": null,
+   "stage": "Main Build Off stage (TBC)",
+   "description": "Time announced in the WhatsApp channel after the vote closes Wednesday midnight.",
+   "tags": [
+    "optional",
+    "ai",
+    "pitch"
+   ],
+   "url": "https://whatsapp.com/channel/0029VbDoZmm5PO10tfT11n0f"
+  },
+  {
+   "id": "after-dark-wed",
+   "title": "After Dark: Rick Parfitt Jnr & the RPJ Band, fire pits",
+   "speakers": [],
+   "day": "2026-09-09",
+   "start": "20:00",
+   "end": "22:45",
+   "stage": "Main arena and fire pits",
+   "description": "Live music until 22:45. Start time estimated. The fire pit conversations are where the deals get done; you're sleeping on site, so stay.",
+   "tags": [
+    "after dark",
+    "network"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  },
+  {
+   "id": "after-dark-thu",
+   "title": "After Dark: DJ Fat Tony",
+   "speakers": [],
+   "day": "2026-09-10",
+   "start": "20:00",
+   "end": "22:45",
+   "stage": "Main arena",
+   "description": "DJ set until 22:45. Start time estimated. You offered Frankie a turn on the decks; chase him on the day.",
+   "tags": [
+    "after dark",
+    "network"
+   ],
+   "url": "https://ideasfest.uk/agenda-2026"
+  }
+ ]
 }

@@ -89,10 +89,19 @@
   }
   function cmp(a, b) { if (a.day !== b.day) return a.day < b.day ? -1 : 1; if (!a.startAt && !b.startAt) return a.title.localeCompare(b.title); if (!a.startAt) return 1; if (!b.startAt) return -1; return a.startAt - b.startAt || a.title.localeCompare(b.title); }
 
-  const planIds = () => { const set = new Set([...(S.plan.favourites || []), ...S.local.added]); for (const r of S.local.removed) set.delete(r); return set; };
+  const planIds = () => { const set = new Set([...(S.plan.favourites || []), ...(S.plan.added || []), ...S.local.added]); for (const r of S.local.removed) set.delete(r); return set; };
+  const isCommitment = (s) => (s.tags || []).includes('commitment');
+  const overlaps = (a, b) => a.day === b.day && a.startAt && b.startAt && a.startAt < b.endAt && b.startAt < a.endAt;
+  // Route = core + booked commitments, plus 'good' sessions that don't clash with them. The walkable day.
+  function route() {
+    const all = planned(); const base = all.filter((s) => fitOf(s).fit === 'core' || isCommitment(s));
+    const extra = all.filter((s) => fitOf(s).fit === 'good' && !base.some((b) => overlaps(b, s)));
+    const out = [...base]; for (const e of extra) { if (!out.some((b) => overlaps(b, e))) out.push(e); }
+    return out.sort(cmp);
+  }
   const inPlan = (id) => planIds().has(id);
   function togglePlan(id) {
-    const seeded = (S.plan.favourites || []).includes(id);
+    const seeded = (S.plan.favourites || []).includes(id) || (S.plan.added || []).includes(id);
     if (inPlan(id)) { if (seeded) S.local.removed.push(id); S.local.added = S.local.added.filter((x) => x !== id); }
     else { S.local.removed = S.local.removed.filter((x) => x !== id); if (!seeded) S.local.added.push(id); }
     save('local', S.local); scheduleReminders(); render();
@@ -123,6 +132,7 @@
     const badges = [
       live ? '<span class="badge live">On now</span>' : '',
       opts.clash ? '<span class="badge clash">Clash</span>' : '',
+      isCommitment(s) ? '<span class="badge core">Booked</span>' : '',
       `<span class="badge ${fit.fit}">${{ core: 'vedrí core', good: 'vedrí fit', maybe: 'maybe', skip: 'skip' }[fit.fit]}</span>`,
       (S.plan.favourites || []).includes(s.id) ? '<span class="badge fav">★ from your Ideas Fest plan</span>' : '',
     ].filter(Boolean).join('');
@@ -138,7 +148,7 @@
   }
 
   function renderNow() {
-    const t = now(); const ev = S.event; const list = planned(); const un = unmatchedFavourites();
+    const t = now(); const ev = S.event; const list = route(); const un = unmatchedFavourites();
     const firstGate = toDate(ev.days[0], ev.hours.gatesOpen); const lastEnd = toDate(ev.days[ev.days.length - 1], '23:00');
     let head = '';
     if (t < firstGate) {
@@ -150,8 +160,8 @@
       const next = list.filter((s) => s.startAt && s.startAt > t).slice(0, 3);
       head = live.length ? `<h2>On now</h2>${live.map((s) => sessionCard(s)).join('')}` : '';
       head += next.length ? `<h2>Up next</h2>${next.map((s) => `<div class="gap">In ${humanIn(s.startAt - t)} · ${fmtTime(s.startAt)} at ${esc(s.stage)}</div>${sessionCard(s)}`).join('')}` : `<div class="card"><p>Nothing else planned with a confirmed time today. Browse the agenda for something worth walking to.</p><div class="row"><button class="btn sm secondary" data-go="agenda">Open agenda</button></div></div>`;
-      if (!live.length && !next.length) { const onSite = S.sessions.filter((s) => !inPlan(s.id) && s.startAt && s.endAt > t && s.startAt - t < 3 * 3600000).slice(0, 5); if (onSite.length) head += `<h2>Next on site</h2>${onSite.map((s) => sessionCard(s)).join('')}`; }
-      const suggest = S.sessions.filter((s) => !inPlan(s.id) && s.startAt && s.startAt > t && s.startAt - t < 90 * 60000 && ['core', 'good'].includes(fitOf(s).fit)).slice(0, 3);
+      if (!live.length && !next.length) { const onSite = S.sessions.filter((s) => !list.some((r) => r.id === s.id) && s.startAt && s.endAt > t && s.startAt - t < 3 * 3600000).slice(0, 5); if (onSite.length) head += `<h2>Next on site</h2>${onSite.map((s) => sessionCard(s)).join('')}`; }
+      const suggest = S.sessions.filter((s) => !list.some((r) => r.id === s.id) && s.startAt && s.startAt > t && s.startAt - t < 90 * 60000 && ['core', 'good'].includes(fitOf(s).fit)).slice(0, 3);
       if (suggest.length) head += `<h2>Worth a detour (next 90 min)</h2>${suggest.map((s) => sessionCard(s)).join('')}`;
     }
     const dataNote = un.length ? `<div class="card"><p><strong>${un.length} of your favourited sessions aren't loaded yet.</strong> The app only has the sessions in its data file. Import the agenda once and they'll appear here with times, stages and reminders.</p><div class="row"><button class="btn sm secondary" data-go="settings">Import agenda</button></div></div>` : '';
@@ -159,9 +169,12 @@
   }
 
   function renderPlan() {
-    const list = planned().filter((s) => s.day === S.day); const cl = clashes(list); const t = now();
+    const mode = S.planMode || 'route';
+    const src = mode === 'route' ? route() : planned();
+    const list = src.filter((s) => s.day === S.day); const cl = clashes(list); const t = now();
     const timed = list.filter((s) => s.startAt); const tbc = list.filter((s) => !s.startAt);
-    let html = `<h1>Your plan</h1>${daySeg()}`;
+    let html = `<h1>Your plan</h1>${daySeg()}<div class="chips">${[['route', 'The route'], ['all', 'Everything saved']].map(([k, l]) => `<button class="chip ${mode === k ? 'on' : ''}" data-planmode="${k}">${l}</button>`).join('')}</div>
+      ${mode === 'route' ? '<p class="small muted">Core picks and booked slots, plus good sessions that fit between them. Switch to see everything saved and suggested.</p>' : '<p class="small muted">All saved and suggested sessions, clashes and all. Tap one for the verdict.</p>'}`;
     if (!list.length) html += `<div class="list-empty">Nothing planned for ${shortDay(S.day)} yet. Star sessions in the agenda.</div>`;
     let prevEnd = null;
     for (const s of timed) {
@@ -171,7 +184,7 @@
     if (tbc.length) html += `<h2>Time to be confirmed</h2>${tbc.map((s) => sessionCard(s, { keepBright: true })).join('')}`;
     const un = unmatchedFavourites();
     if (un.length) html += `<div class="card"><p class="small muted">${un.length} favourites from your Ideas Fest plan link are waiting for agenda data.</p></div>`;
-    if (planned().some((s) => s.startAt)) html += `<h2>Take it with you</h2><div class="card"><p class="small">Native calendar alarms are the most reliable alerts on a phone. Export your whole plan with a ${S.settings.lead}-minute alarm on every session.</p><div class="row"><button class="btn" data-ics="all">Add all to Calendar (.ics)</button></div></div>`;
+    if (route().some((s) => s.startAt)) html += `<h2>Take it with you</h2><div class="card"><p class="small">Native calendar alarms are the most reliable alerts on a phone. Export the route with a ${S.settings.lead}-minute alarm on every session.</p><div class="row"><button class="btn" data-ics="route">Add the route to Calendar (.ics)</button><button class="btn secondary" data-ics="all">Everything saved (.ics)</button></div></div>`;
     return html;
   }
 
@@ -203,6 +216,11 @@
       <h2>Hours</h2><div class="card"><dl class="kv"><dt>Days</dt><dd>${ev.days.map(fmtDay).join(' and ')}</dd><dt>Gates</dt><dd>${esc(ev.hours.gatesOpen)}</dd><dt>Programme</dt><dd>${esc(ev.hours.programme)}</dd><dt>After Dark</dt><dd>${esc(ev.hours.afterDark)}</dd></dl></div>
       <h2>Getting there</h2><div class="card"><dl class="kv"><dt>From DocShed</dt><dd>${esc(ev.travel.fromDocShed)}</dd><dt>By road</dt><dd>${esc(ev.travel.road)} <a href="${esc(ev.links.parking)}" target="_blank" rel="noopener">Parking</a></dd><dt>By rail</dt><dd>${esc(ev.travel.rail)}</dd></dl></div>
       <h2>Stages and zones</h2><div class="card"><p class="small">${ev.stages.map(esc).join(' · ')}</p><p class="small muted">Headliners announced: ${ev.headliners.map(esc).join(', ')}.</p><a class="btn ghost sm" href="${esc(ev.links.stages)}" target="_blank" rel="noopener">Stage map on ideasfest.uk →</a></div>
+      ${ev.you ? `<h2>Your Ideas Fest</h2><div class="card hero"><p class="small"><strong>${esc(ev.you.awards)}</strong></p><p class="small">${esc(ev.you.tickets)}</p></div>
+      <div class="card"><p class="small" style="font-weight:600;margin-bottom:6px">Booked</p><ul class="small" style="padding-left:18px;margin:0;line-height:1.6">${(ev.you.bookings || []).map((n) => `<li>${esc(n)}</li>`).join('')}</ul>
+      <p class="small" style="font-weight:600;margin:12px 0 6px">Open offers</p><ul class="small" style="padding-left:18px;margin:0;line-height:1.6">${(ev.you.offers || []).map((n) => `<li>${esc(n)}</li>`).join('')}</ul>
+      <p class="small muted" style="margin-top:12px">${esc(ev.you.concierge)} ${esc(ev.you.workspace)}</p></div>
+      <h2>Pack</h2><div class="card"><ul class="small" style="padding-left:18px;margin:0;line-height:1.6">${(ev.you.packing || []).map((n) => `<li>${esc(n)}</li>`).join('')}</ul></div>` : ''}
       <h2>Why we're here</h2><div class="card"><p class="small muted">${esc(p.who || '')}</p><ul class="small" style="padding-left:18px;margin:8px 0 0;line-height:1.6">${(p.goals || []).map((g) => `<li>${esc(g)}</li>`).join('')}</ul></div>
       <h2>The 15-second intro</h2><div class="card"><p>"We're vedrí, a virtual production studio in North Wales. We shoot on green screen with the final composite live on the monitors, so you walk out with the finished shot, not a post bill. Podcasts, corporate, commercials. We hire in LED volumes when a job needs in-camera. What are you filming this year?"</p><p class="small muted">info@vedri.studio · vedri.studio</p></div>
       <h2>Good to know</h2><div class="card"><ul class="small" style="padding-left:18px;margin:0;line-height:1.6">${ev.notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul></div>
@@ -284,7 +302,7 @@
   // ---------- Reminders ----------
   function reminderItems() {
     const lead = S.settings.lead * 60000;
-    return planned().filter((s) => s.startAt).map((s) => ({ id: `rem-${s.id}-${S.settings.lead}`, sessionId: s.id, at: s.startAt.getTime() - lead, title: `${s.title}`, body: `Starts in ${S.settings.lead} min · ${s.stage || ''} · ${fmtTime(s.startAt)}` }));
+    return route().filter((s) => s.startAt).map((s) => ({ id: `rem-${s.id}-${S.settings.lead}`, sessionId: s.id, at: s.startAt.getTime() - lead, title: `${s.title}`, body: `Starts in ${S.settings.lead} min · ${s.stage || ''} · ${fmtTime(s.startAt)}` }));
   }
   function scheduleReminders() {
     if (!S.settings.notify || !('Notification' in window) || Notification.permission !== 'granted') return;
@@ -362,7 +380,8 @@
     root.querySelectorAll('[data-open]').forEach((c) => c.onclick = (e) => { if (e.target.closest('[data-star]')) return; location.hash = 'session=' + c.dataset.open; openSheet(c.dataset.open); });
     root.querySelectorAll('[data-star]').forEach((b) => b.onclick = (e) => { e.stopPropagation(); togglePlan(b.dataset.star); if (!$('#sheet').hidden) openSheet(b.dataset.star); });
     root.querySelectorAll('[data-fitset]').forEach((b) => b.onclick = () => { S.local.fitOverride[b.dataset.id] = b.dataset.fitset; save('local', S.local); openSheet(b.dataset.id); });
-    root.querySelectorAll('[data-ics]').forEach((b) => b.onclick = () => { const id = b.dataset.ics; if (id === 'all') downloadIcs(planned(), 'ideas-fest-2026-vedri.ics'); else { const s = S.sessions.find((x) => x.id === id); if (s) downloadIcs([s], slug(s.title) + '.ics'); } });
+    root.querySelectorAll('[data-planmode]').forEach((b) => b.onclick = () => { S.planMode = b.dataset.planmode; render(); });
+    root.querySelectorAll('[data-ics]').forEach((b) => b.onclick = () => { const id = b.dataset.ics; if (id === 'all') downloadIcs(planned(), 'ideas-fest-2026-vedri-all.ics'); else if (id === 'route') downloadIcs(route(), 'ideas-fest-2026-vedri-route.ics'); else { const s = S.sessions.find((x) => x.id === id); if (s) downloadIcs([s], slug(s.title) + '.ics'); } });
     root.querySelectorAll('[data-fit]').forEach((b) => b.onclick = () => { S.filters.fit = b.dataset.fit; render(); });
     root.querySelectorAll('[data-stage]').forEach((b) => b.onclick = () => { S.filters.stage = b.dataset.stage; render(); });
     const q = root.querySelector('#q'); if (q) q.oninput = () => { S.filters.q = q.value; const list = renderAgenda(); view.innerHTML = list; bind(); const nq = $('#q'); nq.focus(); nq.setSelectionRange(nq.value.length, nq.value.length); };
