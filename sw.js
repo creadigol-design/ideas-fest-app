@@ -1,5 +1,5 @@
 /* Service worker: offline shell + reminder scheduling while the app is open/backgrounded. */
-const CACHE = 'ideasfest-vedri-v1';
+const CACHE = 'ideasfest-vedri-v3';
 const SHELL = ['./', './index.html', './styles.css', './app.js', './manifest.webmanifest',
   './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 
@@ -12,16 +12,14 @@ self.addEventListener('activate', (e) => {
 
 self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
-  if (url.origin !== location.origin) return;
-  // Data files: network first, fall back to cache so the plan still loads in a field with no signal.
-  if (url.pathname.includes('/data/')) {
-    e.respondWith(fetch(e.request).then((r) => { const copy = r.clone(); caches.open(CACHE).then((c) => c.put(e.request, copy)); return r; })
-      .catch(() => caches.match(e.request)));
-    return;
-  }
-  e.respondWith(caches.match(e.request).then((hit) => hit || fetch(e.request).then((r) => {
-    const copy = r.clone(); caches.open(CACHE).then((c) => c.put(e.request, copy)); return r;
-  })));
+  if (url.origin !== location.origin || e.request.method !== 'GET') return;
+  // Cache key without the cache-busting query, so offline lookups hit the last good copy.
+  const key = new Request(url.origin + url.pathname);
+  // Network first for everything on our origin (data and shell), falling back to the cached copy in a field with no signal.
+  e.respondWith(fetch(e.request).then((r) => {
+    if (r && r.ok) { const copy = r.clone(); caches.open(CACHE).then((c) => c.put(key, copy)); }
+    return r;
+  }).catch(() => caches.match(key, { ignoreSearch: true }).then((hit) => hit || (url.pathname.endsWith('/') ? caches.match('./index.html') : undefined))));
 });
 
 // Reminder timers. The page posts {type:'schedule', items:[{id,title,body,at}]}.
